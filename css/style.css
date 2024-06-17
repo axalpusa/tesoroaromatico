@@ -356,7 +356,7 @@ h3,
 	h3,
 	.heading-3 {
 		font-size: 24px;
-		line-height: 1.25;
+		line-height: 1;
 	}
 }
 
@@ -6873,7 +6873,7 @@ html:not(.tablet):not(.mobile) .thumb-ruby:hover .thumb-ruby__text {
 .thumb-ann__text {
 	font-family: "Montserrat", sans-serif;
 	position: relative;
-	padding-top: 20px;
+	padding-top: 10px;
 }
 
 .thumb-ann__text::before {
@@ -6888,7 +6888,7 @@ html:not(.tablet):not(.mobile) .thumb-ruby:hover .thumb-ruby__text {
 }
 
 * + .thumb-ann {
-	margin-top: 30px;
+	margin-top: 10px;
 }
 
 @media (max-width: 767px) {
@@ -6898,16 +6898,21 @@ html:not(.tablet):not(.mobile) .thumb-ruby:hover .thumb-ruby__text {
 		margin-right: auto;
 	}
 }
+@media (max-width: 767px) {
+	.thumb-ann__caption {
+		display: none;
+	}
+}
 
 @media (min-width: 1200px) {
 	.thumb-ann.thumb-mixed_large .thumb-ann__title {
-		font-size: 36px;
+		font-size: 28px;
 	}
 }
 
 html:not(.tablet):not(.mobile) .thumb-ann__caption::before {
 	opacity: 0;
-	transform: scale(1.15);
+	transform: scale(1);
 	will-change: transform;
 }
 
@@ -6932,7 +6937,7 @@ html:not(.tablet):not(.mobile) .thumb-ann__title {
 }
 
 html:not(.tablet):not(.mobile) .thumb-ann__image {
-	transform: scale(1.1);
+	transform: scale(1);
 }
 
 html:not(.tablet):not(.mobile) .thumb-ann__caption {
@@ -6941,7 +6946,7 @@ html:not(.tablet):not(.mobile) .thumb-ann__caption {
 
 html:not(.tablet):not(.mobile) .thumb-ann__text {
 	opacity: 0;
-	transform: translate3d(0, 20px, 0) scale(1.1);
+	transform: translate3d(0, 20px, 0) scale(1);
 }
 
 html:not(.tablet):not(.mobile) .thumb-ann:hover .thumb-ann__caption {
