@@ -338,7 +338,7 @@
 			var regularConstraintsMessages = [
 				{
 					type: regula.Constraint.Required,
-					newMessage: "The text field is required."
+					newMessage: "Este campo es obligatorio."
 				},
 				{
 					type: regula.Constraint.Email,
@@ -827,7 +827,42 @@
 		}
 
 		// RD Mailform
-		if (plugins.rdMailForm.length) {
+		document.querySelector('#contact-form').addEventListener('submit', function (event) {
+			event.preventDefault();
+			var form = event.target;
+			var data = new FormData(form);
+			var formResponse = document.getElementById('form-response');
+		
+			fetch(form.action, {
+				method: form.method,
+				body: data,
+				headers: {
+					'Accept': 'application/json'
+				}
+			}).then(response => {
+				if (response.ok) {
+					formResponse.textContent = 'Formulario enviado correctamente.';
+					formResponse.style.color = 'green';
+					form.reset();
+				} else {
+					response.json().then(data => {
+						if (Object.hasOwn(data, 'errors')) {
+							formResponse.textContent = data["errors"].map(error => error["message"]).join(", ");
+						} else {
+							formResponse.textContent = 'Error al enviar el formulario.';
+						}
+						formResponse.style.color = 'red';
+					});
+				}
+			}).catch(error => {
+				formResponse.textContent = 'Error al enviar el formulario.';
+				formResponse.style.color = 'red';
+			});
+		});
+		
+		
+		/*if (plugins.rdMailForm.length) {
+
 			var i, j, k,
 				msg = {
 					'MF000': 'Enviado con exito!',
@@ -973,7 +1008,7 @@
 					}
 				});
 			}
-		}
+		}*/
 
 		/**
 		 * jQuery Count To
