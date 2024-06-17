@@ -7935,7 +7935,7 @@ html .page .group-sm-justify .button {
 	color: #461519;
 }
 .bg-gray-darker{
-	background-color: #461519;
+	background-color: #F4ECE7;
 }
 .bg-image-dark .button-default, .bg-image-dark .button-default:focus {
 	color: #461519;
@@ -15591,7 +15591,7 @@ html.boxed .rd-navbar--is-clone {
 
 .ui-to-top:hover {
 	color: #ffffff;
-	background: #008a73;
+	background: #CF9E7C;
 	text-decoration: none;
 }
 
