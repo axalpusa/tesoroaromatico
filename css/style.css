@@ -77,7 +77,7 @@
 **/
 
 .container{
-    width: 50%;
+    width: 60%;
     display: flex;
     justify-content: space-around;
     margin: 0 auto;
@@ -85,9 +85,14 @@
 .big-number{
 	font-family: "Montserrat", sans-serif;
     font-size: 50px;
-    font-weight: 400;
+    font-weight: 50%;
     margin-bottom: 5px;
     margin-top: 5px;
+}
+@media (max-width: 470px) {
+	.big-number{
+		font-size: 20px;
+	}
 }
 
 a:focus,
@@ -6581,7 +6586,7 @@ html:not(.tablet):not(.mobile).ie-10 .thumb-janez__content::after, html:not(.tab
 	position: relative;
 	padding-top: 20px;
 	font-family: "Montserrat", sans-serif;
-	text-align: justify;
+	/*text-align: justify;*/
 }
 
 .thumb-ruby__text::before {
@@ -6909,7 +6914,7 @@ html:not(.tablet):not(.mobile) .thumb-ruby:hover .thumb-ruby__text {
 
 @media (min-width: 1200px) {
 	.thumb-ann.thumb-mixed_large .thumb-ann__title {
-		font-size: 28px;
+		font-size: 32px;
 	}
 }
 
@@ -6976,7 +6981,7 @@ html:not(.tablet):not(.mobile) .thumb-ann:hover .thumb-ann__caption {
 
 html:not(.tablet):not(.mobile) .thumb-ann:hover .thumb-ann__text {
 	opacity: 1;
-	transform: translate3d(0, 0, 0) scale(1);
+	transform: translate3d(0, 0, 0) scale(1.2);
 }
 
 /**
