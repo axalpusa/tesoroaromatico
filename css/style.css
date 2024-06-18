@@ -6910,8 +6910,15 @@ html:not(.tablet):not(.mobile) .thumb-ruby:hover .thumb-ruby__text {
 	.thumb-ann__caption {
 		display: none;
 	}
+	.textImg {
+		display: block;
+	}
 }
-
+@media (min-width: 768px) {
+	.textImg {
+		display: none;
+	}
+}
 @media (min-width: 1200px) {
 	.thumb-ann.thumb-mixed_large .thumb-ann__title {
 		font-size: 32px;
