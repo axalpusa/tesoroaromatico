@@ -195,7 +195,7 @@
 		const mins = document.getElementById("mins");
 		const seconds = document.getElementById("seconds");
 
-		const newYear = '25 jun 2024 14:00';
+		const newYear = '30 jun 2024 15:00';
 
 		function countTimer(){
 			const newYearDate = new Date(newYear);
