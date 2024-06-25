@@ -6692,6 +6692,12 @@ html:not(.tablet):not(.mobile).ie-10 .thumb-janez__content::after, html:not(.tab
 		max-width: 400px;
 	}
 }
+@media (max-width: 1200px) {
+	.thumb-mixed_large .thumb-ruby__caption {
+		min-height: 500px;
+	}
+}
+
 
 @media (min-width: 1200px) and (max-width: 1799px) {
 	.thumb-mixed_height-4 .thumb-ruby__caption {
