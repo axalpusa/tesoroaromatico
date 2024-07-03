@@ -222,7 +222,7 @@
 		const mins_galery = document.getElementById("mins_galery");
 		const seconds_galery = document.getElementById("seconds_galery");
 
-		const galery = '05 jul 2024 12:00';
+		const galery = '04 jul 2024 12:00';
 
 		function countTimer_galery(){
 			const newYearDate_galery = new Date(galery);
