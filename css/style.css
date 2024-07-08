@@ -6644,10 +6644,10 @@ html:not(.tablet):not(.mobile).ie-10 .thumb-janez__content::after, html:not(.tab
 		min-height: 300px;
 	}
 	.thumb-mixed_height-2 .thumb-ruby__caption {
-		min-height: 262px;
+		/*min-height: 262px;*/
 	}
 	.thumb-mixed_height-2 .thumb-ruby__caption > * {
-		max-width: 300px;
+		/*max-width: 300px;*/
 	}
 	.thumb-mixed_height-3 .thumb-ruby__caption {
 		min-height: 553px;
@@ -6710,7 +6710,7 @@ html:not(.tablet):not(.mobile).ie-10 .thumb-janez__content::after, html:not(.tab
 
 @media (min-width: 1400px) {
 	.thumb-mixed_height-2 .thumb-ruby__caption {
-		min-height: 327px;
+		/*min-height: 327px;*/
 	}
 	.thumb-mixed_height-3 .thumb-ruby__caption {
 		min-height: 683px;
@@ -6719,7 +6719,7 @@ html:not(.tablet):not(.mobile).ie-10 .thumb-janez__content::after, html:not(.tab
 		min-height: 363px;
 	}
 	.thumb-mixed_md .thumb-ruby__title {
-		font-size: 36px;
+	/*	font-size: 36px;*/
 	}
 }
 
