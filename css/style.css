@@ -94,7 +94,6 @@
 		font-size: 20px;
 	}
 }
-
 a:focus,
 button:focus {
 	outline: none !important;
@@ -114,7 +113,10 @@ select,
 textarea {
 	outline: none;
 }
-
+.w3-red{
+	color: #ffffff;
+	background: #461519;
+}
 p {
 	margin: 0;
 }

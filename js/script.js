@@ -167,12 +167,13 @@
 				} );
 			}
 		}
-
+		
 		/**
 		 * @desc Initialize the gallery with dynamic addition of images
 		 * @param {object} itemsToInit - jQuery object
 		 * @param {string} [addClass] - additional gallery class
 		 */
+
 		function initDynamicLightGallery ( itemsToInit, addClass ) {
 			if ( !isNoviBuilder ) {
 				$( itemsToInit ).on( "click", function () {
@@ -190,59 +191,7 @@
 				} );
 			}
 		}
-		const days = document.getElementById("days");
-		const hours = document.getElementById("hours");
-		const mins = document.getElementById("mins");
-		const seconds = document.getElementById("seconds");
-
-		const newYear = '30 jun 2024 15:00';
-
-		function countTimer(){
-			const newYearDate = new Date(newYear);
-			const currentDate = new Date();
-
-			const totalSeconds = (newYearDate - currentDate) / 1000;
-
-			const daysCalc = Math.floor(totalSeconds / 3600 / 24);
-			const hoursCalc = Math.floor(totalSeconds / 3600) % 24;
-			const minsCalc = Math.floor(totalSeconds / 60) % 60;
-			const secondsCalc = Math.floor(totalSeconds % 60);
-			
-			days.innerHTML = daysCalc;
-			hours.innerHTML = hoursCalc;
-			mins.innerHTML = minsCalc;
-			seconds.innerHTML = secondsCalc;
-		}
-		countTimer();
-
-		setInterval(countTimer, 1000);
-
-		const days_galery = document.getElementById("days_galery");
-		const hours_galery = document.getElementById("hours_galery");
-		const mins_galery = document.getElementById("mins_galery");
-		const seconds_galery = document.getElementById("seconds_galery");
-
-		const galery = '08 jul 2024 12:00';
-
-		function countTimer_galery(){
-			const newYearDate_galery = new Date(galery);
-			const currentDate_galery = new Date();
-
-			const totalSeconds_galery = (newYearDate_galery - currentDate_galery) / 1000;
-
-			const daysCalc_galery = Math.floor(totalSeconds_galery / 3600 / 24);
-			const hoursCalc_galery = Math.floor(totalSeconds_galery / 3600) % 24;
-			const minsCalc_galery = Math.floor(totalSeconds_galery / 60) % 60;
-			const secondsCalc_galery = Math.floor(totalSeconds_galery % 60);
-			
-			days_galery.innerHTML = daysCalc_galery;
-			hours_galery.innerHTML = hoursCalc_galery;
-			mins_galery.innerHTML = minsCalc_galery;
-			seconds_galery.innerHTML = secondsCalc_galery;
-		}
-		countTimer_galery();
-
-		setInterval(countTimer_galery, 1000);
+		
 
 		/**
 		 * @desc Initialize the gallery with one image
@@ -298,6 +247,8 @@
 			}
 		}
 
+		// Mostrar la primera galería por defecto al cargar la página
+		//openGallery('galeria');
 		/**
 		 * @desc Attach form validation to elements
 		 * @param {object} elements - jQuery object
